@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cen Ie Padel & Tennis</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .carousel-item {
+        display: none;
+      }
+      .carousel-item.active {
+        display: block;
+      }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -46,7 +54,7 @@
   <!-- Hero -->
   <section class="relative isolate">
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=2000&auto=format&fit=crop" alt="Padel court background" class="h-full w-full object-cover" />
+      <img src="hero.jpg" alt="Padel court background" class="h-full w-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50"></div>
     </div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
@@ -85,16 +93,8 @@
         </ul>
       </div>
       <div class="order-1 lg:order-2">
-        <div class="grid grid-cols-2 gap-4">
-          <div class="relative aspect-square overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200">
-            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=800&auto=format&fit=crop" alt="Coach demonstrating padel technique" class="h-full w-full object-cover" />
-          </div>
-          <div class="relative aspect-square overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200">
-            <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=800&auto=format&fit=crop" alt="Padel training session" class="h-full w-full object-cover" />
-          </div>
-          <div class="relative aspect-square overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200 col-span-2">
-            <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1600&auto=format&fit=crop" alt="Group training on court" class="h-full w-full object-cover" />
-          </div>
+        <div class="relative aspect-square overflow-hidden rounded-full shadow-xl ring-1 ring-slate-200">
+          <img src="coach1.jpg" alt="Professional padel coach" class="h-full w-full object-cover scale-110" />
         </div>
       </div>
     </div>
@@ -228,30 +228,45 @@
         <h2 class="text-3xl sm:text-4xl font-bold text-emerald-800">Training in Action</h2>
         <p class="mt-3 text-slate-600">See our players developing their skills on the court</p>
       </div>
-      <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1617882044039-8e3d0a2e0e2f?q=80&w=600&auto=format&fit=crop" alt="Padel action shot" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=600&auto=format&fit=crop" alt="Court training" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?q=80&w=600&auto=format&fit=crop" alt="Player technique" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1613918108466-292b78a8ef95?q=80&w=600&auto=format&fit=crop" alt="Match play" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?q=80&w=600&auto=format&fit=crop" alt="Training drill" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=600&auto=format&fit=crop" alt="Court view" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=600&auto=format&fit=crop" alt="Players celebrating" class="h-full w-full object-cover" />
-        </div>
-        <div class="relative aspect-square overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200 hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=600&auto=format&fit=crop" alt="Team training" class="h-full w-full object-cover" />
+      <div class="mt-10">
+        <div id="videoCarousel" class="relative rounded-xl overflow-hidden shadow-lg">
+          <!-- Video Slides -->
+          <div class="carousel-item active">
+            <video class="w-full" autoplay muted playsinline>
+              <source src="video 1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video class="w-full" muted playsinline>
+              <source src="video 2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video class="w-full" muted playsinline>
+              <source src="video 3.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <!-- Previous Button -->
+          <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+
+          <!-- Next Button -->
+          <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+
+          <!-- Indicators -->
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            <button onclick="goToSlide(0)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
+            <button onclick="goToSlide(1)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
+            <button onclick="goToSlide(2)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
+          </div>
         </div>
       </div>
     </div>
@@ -270,10 +285,7 @@
               <svg class="h-5 w-5 text-emerald-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h2.6a2 2 0 0 1 1.9 1.37l.7 2.08a2 2 0 0 1-.45 2.06L8.6 10.6a16 16 0 0 0 4.8 4.8l1.09-1.15a2 2 0 0 1 2.06-.45l2.08.7A2 2 0 0 1 20 15.6V18a2 2 0 0 1-2 2h-1c-7.18 0-13-5.82-13-13V5z"/></svg>
               <span>+32 456 654 955</span>
             </li>
-            <li class="flex items-center gap-2">
-              <svg class="h-5 w-5 text-emerald-700" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v.4l10 6.25L22 6.4V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.2z"/></svg>
-              <span>coach@ceniepadel.com</span>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -340,14 +352,8 @@
     <div>
       <p class="font-semibold text-white">Follow</p>
       <div class="mt-3 flex items-center gap-3">
-        <a aria-label="Instagram" href="#" class="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition">
+        <a aria-label="Instagram" href="https://www.instagram.com/cen_ie_padeltenniscoaching?igsh=dWpyaXVtdjdvNm43" class="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
-        </a>
-        <a aria-label="Facebook" href="#" class="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition">
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22V12h3l1-4h-4V6c0-1.1.9-2 2-2h2V0h-3a5 5 0 0 0-5 5v3H7v4h2v10h4z"/></svg>
-        </a>
-        <a aria-label="TikTok" href="#" class="h-9 w-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition">
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 8a7 7 0 0 1-6-3v10a6 6 0 1 1-6-6c.34 0 .67.03 1 .08V12a2 2 0 1 0 2 2V2h3a7 7 0 0 0 6 6z"/></svg>
         </a>
       </div>
     </div>
@@ -358,6 +364,53 @@
 </footer>
 
 <script>
+  // Simple Carousel
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-item');
+  const indicators = document.querySelectorAll('.indicator');
+  const videos = document.querySelectorAll('.carousel-item video');
+
+  function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(ind => ind.classList.remove('bg-white'));
+    indicators.forEach(ind => ind.classList.add('bg-white/50'));
+    
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    indicators[currentSlide].classList.remove('bg-white/50');
+    indicators[currentSlide].classList.add('bg-white');
+    
+    // Play current video, pause others
+    videos.forEach((video, index) => {
+      if (index === currentSlide) {
+        video.currentTime = 0; // Reset to start
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }
+
+  function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+  }
+
+  function goToSlide(n) {
+    showSlide(n);
+  }
+
+  // Add event listeners to videos to advance when they end
+  videos.forEach((video, index) => {
+    video.addEventListener('ended', () => {
+      if (index === currentSlide) {
+        changeSlide(1);
+      }
+    });
+  });
+
+  // Initialize
+  showSlide(0);
+
   // Update year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
 
