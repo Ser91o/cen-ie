@@ -54,13 +54,13 @@
   <!-- Hero -->
   <section class="relative isolate">
     <div class="absolute inset-0">
-      <img src="hero.jpg" alt="Padel court background" class="h-full w-full object-cover" />
+      <img src="hero.webp" alt="Padel court background" class="h-full w-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50"></div>
     </div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
       <div class="max-w-3xl">
         <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-          Padel Coaching for All Levels
+          Padel & Tennis Coaching for All Levels
         </h1>
         <p class="mt-4 text-lg sm:text-xl text-slate-200 leading-relaxed">
           Private lessons, group sessions, and performance programs to elevate your game.
@@ -94,7 +94,7 @@
       </div>
       <div class="order-1 lg:order-2">
         <div class="relative aspect-square overflow-hidden rounded-full shadow-xl ring-1 ring-slate-200">
-          <img src="coach1.jpg" alt="Professional padel coach" class="h-full w-full object-cover scale-110" />
+          <img src="coach1.webp" alt="Professional padel coach" class="h-full w-full object-cover scale-110" />
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
         <!-- Card 1 -->
         <article class="rounded-2xl bg-white overflow-hidden shadow-sm ring-1 ring-slate-200 hover:shadow-md transition">
           <div class="relative h-48 overflow-hidden">
-            <img src="1-on-1.jpg" alt="Private padel lesson" class="h-full w-full object-cover" />
+            <img src="1-on-1.webp" alt="Private padel lesson" class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
             <div class="flex items-center gap-3">
@@ -129,7 +129,7 @@
         <!-- Card 2 -->
         <article class="rounded-2xl bg-white overflow-hidden shadow-sm ring-1 ring-slate-200 hover:shadow-md transition">
           <div class="relative h-48 overflow-hidden">
-            <img src="group.jpg" alt="Group padel training" class="h-full w-full object-cover" />
+            <img src="group.webp" alt="Group padel training" class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
             <div class="flex items-center gap-3">
@@ -138,7 +138,6 @@
             </div>
             <p class="mt-3 text-slate-600">Train with others at your level to improve fast with game-based drills.</p>
             <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li>2–4 players</li>
               <li>Drills + match play</li>
               <li>Level-based groups</li>
             </ul>
@@ -147,7 +146,7 @@
         <!-- Card 3 -->
         <article class="rounded-2xl bg-white overflow-hidden shadow-sm ring-1 ring-slate-200 hover:shadow-md transition">
           <div class="relative h-48 overflow-hidden">
-            <img src="kids.jpg" alt="Junior padel program" class="h-full w-full object-cover" />
+            <img src="kids.webp" alt="Junior padel program" class="h-full w-full object-cover" />
           </div>
           <div class="p-6">
             <div class="flex items-center gap-3">
@@ -156,7 +155,6 @@
             </div>
             <p class="mt-3 text-slate-600">Fun, structured sessions to develop skills, coordination, and passion.</p>
             <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li>Ages 8–16</li>
               <li>Progress tracking</li>
               <li>Friendly competition</li>
             </ul>
@@ -228,45 +226,45 @@
         <h2 class="text-3xl sm:text-4xl font-bold text-emerald-800">Training in Action</h2>
         <p class="mt-3 text-slate-600">See our players developing their skills on the court</p>
       </div>
-      <div class="mt-10">
-        <div id="videoCarousel" class="relative rounded-xl overflow-hidden shadow-lg">
-          <!-- Video Slides -->
-          <div class="carousel-item active">
-            <video class="w-full" autoplay muted playsinline>
-              <source src="video 1.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="carousel-item">
-            <video class="w-full" muted playsinline>
-              <source src="video 2.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="carousel-item">
-            <video class="w-full" muted playsinline>
-              <source src="video 3.mp4" type="video/mp4" />
-            </video>
-          </div>
+      <div class="mt-10 relative rounded-xl overflow-hidden shadow-lg">
+        <div class="carousel-item active">
+          <video class="w-full" autoplay muted playsinline poster="video-1-poster.jpg">
+            <source src="video-1-720.webm" type="video/webm" />
+            <source src="video-1-720.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="w-full" muted playsinline poster="video-2-poster.jpg">
+            <source src="video-2-720.webm" type="video/webm" />
+            <source src="video-2-720.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="carousel-item">
+          <video class="w-full" muted playsinline poster="video-3-poster.jpg">
+            <source src="video-3-720.webm" type="video/webm" />
+            <source src="video-3-720.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-          <!-- Previous Button -->
-          <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
-            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-          </button>
+        <!-- Previous Button -->
+        <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
 
-          <!-- Next Button -->
-          <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
-            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-          </button>
+        <!-- Next Button -->
+        <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-3 transition">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
 
-          <!-- Indicators -->
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-            <button onclick="goToSlide(0)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
-            <button onclick="goToSlide(1)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
-            <button onclick="goToSlide(2)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
-          </div>
+        <!-- Indicators -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <button onclick="goToSlide(0)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
+          <button onclick="goToSlide(1)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
+          <button onclick="goToSlide(2)" class="indicator w-8 h-1 bg-white/50 hover:bg-white rounded-full transition"></button>
         </div>
       </div>
     </div>
